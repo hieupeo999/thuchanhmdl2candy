@@ -10,12 +10,21 @@ public class Candy {
     }
 
     public Candy(int id, String color, String property, int amount, int price) {
-        this.id = id;
+        this.id = ++value;
         this.color = color;
         this.property = property;
         this.amount = amount;
         this.price = price;
     }
+    public Candy( String color, String property, int amount, int price) {
+
+        this.color = color;
+        this.property = property;
+        this.amount = amount;
+        this.price = price;
+    }
+
+
 
     public static int getValue() {
         return value;
